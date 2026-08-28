@@ -1,0 +1,19 @@
+{
+  "tables": {
+    "gms_zone_to_Zone": {
+      "source_table": "gms_zone",
+      "target_table": "Zone",
+      "columns": { "zone_id": "id", "zone_code": "zone_code", "zone_name": "zone_name", "country_id": "country_id" }
+    },
+    "gms_state_to_State": {
+      "source_table": "gms_state",
+      "target_table": "State",
+      "columns": { "state_id": "id", "zone_id": "zone_id", "state_code": "state_code", "state_name": "state_name" }
+    },
+    "gms_city_to_City": {
+      "source_table": "gms_city",
+      "target_table": "City",
+      "columns": { "city_id": "id", "state_id": "state_id", "city_code": "city_code", "city_name": "city_name", "metro": "is_metro" }
+    }
+  }
+}
